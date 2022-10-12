@@ -8,7 +8,8 @@ public class Main {
         //TableOfNumber();
         //StudentMark();
         //PrimeNumber();
-        PrimeNumbers();
+        //PrimeNumbers();
+        fibonacci();
     }
 
     public static void SumNaturalNumbers(){
@@ -94,5 +95,21 @@ public class Main {
         }
         System.out.println();
         PrimeNumbers();
+    }
+
+    public static void fibonacci(){
+        int a = 0;
+        int b =1;
+        int c=0;
+
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        for(int i=0; i<=n; i++){
+            System.out.print(a+" ");
+            c = a+b;
+            a = b;
+            b = c;
+        }
     }
 }
